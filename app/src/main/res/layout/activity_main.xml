@@ -42,15 +42,54 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="자기소개 한줄로 입력"
-        android:singleLine="true"  />
+        android:singleLine="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="추천인 닉네임 검색"/>
+        android:text="추천인 닉네임 검색" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="닉네임검색"
         android:imeOptions="actionSearch"
-        android:singleLine="true"  />
+        android:singleLine="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남성"
+            />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여성"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공개안함"
+            />
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="이용 약관에 동의합니다" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="25sp" />
+
 </LinearLayout>
