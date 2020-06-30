@@ -64,20 +64,6 @@
         android:hint="자기소개 한줄로 입력"
         android:singleLine="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="추천인 닉네임 검색" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="닉네임검색"
-        android:imeOptions="actionSearch"
-        android:singleLine="true" />
-
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,9 +80,9 @@
             android:text="여성" />
 
         <RadioButton
-            android:enabled="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:text="공개안함" />
     </RadioGroup>
 
@@ -112,10 +98,33 @@
         android:checked="true"
         android:text="이용 약관에 동의합니다" />
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="회원가입"
-        android:textSize="25sp" />
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼들"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="돌아가기"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 
 </LinearLayout>
